@@ -1,7 +1,7 @@
 gpuid=0
 N_SHOT=1
 
-DATA_ROOT=/path/cub # path to the json file of CUB
+DATA_ROOT=/content/CloserLookFewShot/filelists/CUB # path to the json file of CUB
 MODEL_PATH=./checkpoints/cub/ResNet18_meta_deepbdc_5way_${N_SHOT}shot_metatrain/best_model.tar
 cd ../../../
 

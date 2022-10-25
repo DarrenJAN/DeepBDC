@@ -1,6 +1,6 @@
 gpuid=0
 
-DATA_ROOT=/path/cub # path to the json file of CUB
+DATA_ROOT=/content/CloserLookFewShot/filelists/CUB # path to the json file of CUB
 MODEL_PATH=./checkpoints/cub/ResNet18_meta_deepbdc_pretrain/last_model.tar
 cd ../../../
 

@@ -1,6 +1,6 @@
 gpuid=0
 
-DATA_ROOT=/path/cub # path to the json file of CUB
+DATA_ROOT=/content/CloserLookFewShot/filelists/CUB # path to the json file of CUB
 cd ../../../
 
 echo "============= pre-train ============="
