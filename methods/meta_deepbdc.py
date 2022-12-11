@@ -56,3 +56,4 @@ class MetaDeepBDC(MetaTemplate):
         else:
             score = (x * y).sum(2)
         return score
+

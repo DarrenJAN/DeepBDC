@@ -80,7 +80,7 @@ if __name__ == '__main__':
     parser.add_argument('--epoch', default=100, type=int, help='Stopping epoch')
     parser.add_argument('--gpu', default='0', help='gpu id')
 
-    parser.add_argument('--dataset', default='mini_imagenet', choices=['mini_imagenet','tiered_imagenet','cub'])
+    parser.add_argument('--dataset', default='mini_imagenet', choices=['mini_imagenet','tiered_imagenet','cub', 'caltech101'])
     parser.add_argument('--data_path', type=str, help='dataset path')
 
     parser.add_argument('--model', default='ResNet12', choices=['ResNet12','ResNet18'])
@@ -120,6 +120,11 @@ if __name__ == '__main__':
         base_file = 'train'
         val_file = 'val'
         params.num_classes = 351
+    elif params.dataset == 'caltech101':
+        base_file = 'base.json'
+        val_file = 'val.json'
+        json_file_read = True
+        params.num_classes = 101
     else:
         ValueError('dataset error')
 

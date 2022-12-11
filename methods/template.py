@@ -257,3 +257,4 @@ class MetaTemplate(nn.Module):
         print('%d Test Acc = %4.2f%% +- %4.2f%%' % (iter_num, acc_mean, 1.96 * acc_std / np.sqrt(iter_num)))
 
         return avg_loss / iter_num, acc_mean
+    
