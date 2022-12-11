@@ -131,10 +131,7 @@ Experimental results on miniImageNet and CUB. We report average results with 2,0
 
 *Note that for Good-Embed and STL DeepBDC, a sequential self-distillation technique is used to obtain the pre-trained models; See the paper of Good-Embed for details.*
 
-## References
-[BDC] G. J. Szekely and M. L. Rizzo. Brownian distance covariance. Annals of Applied Statistics, 3:1236–1265, 2009.<br>
-[ProtoNet] Jake Snell, Kevin Swersky, and Richard Zemel. Prototypical networks for few-shot learning. In NIPS, 2017.<br>
-[Good-Embed] Y. Tian, Y. Wang, D. Krishnan, J. B. Tenenbaum, and P. Isola. Rethinking few-shot image classification: a good embedding is all you need? In ECCV, 2020.<br> 
+
 
 ## Implementation details
 ### Datasets
@@ -144,14 +141,7 @@ Experimental results on miniImageNet and CUB. We report average results with 2,0
 - Aircraft
 - Cars
 
-### Implementation environment
-*Note that the test accuracy may slightly vary with different Pytorch/CUDA versions, GPUs, etc.*
-<br>
-- Linux
-- Python 3.8.3
-- torch 1.7.1
-- GPU (RTX3090) + CUDA11.0 CuDNN
-- sklearn1.0.1,  pillow8.0.0, numpy1.19.2
+
 ### Installation
 
 - Clone this repo:
@@ -169,18 +159,3 @@ cd DeepBDC
 1. `cd scripts/mini_imagenet/run_stl_deepbdc`
 2.  modify the dataset path in `run_pretrain.sh`, `run_distillation.sh` and `run_test.sh`
 3. `bash run.sh`
-
-## Acknowledgments
-Our code builds upon the the following code publicly available:
-- [CloserLookFewShot](https://github.com/wyharveychen/CloserLookFewShot)
-- [RFS](https://github.com/WangYueFt/rfs/)
-
-## Contact
-
-If you have any questions or suggestions, please contact us:
-
-`Fei Long(longfei121@mail.dlut.edu.cn)`<br>
-`Jiaming Lv(ljm_vlg@mail.dlut.edu.cn)`
-
-
-
